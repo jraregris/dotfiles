@@ -1,4 +1,4 @@
-*font: -*-terminus-*-*-*-*-16-*-*-*-*-*-*-*
+*font: xft:Terminus
 
 URxvt.scrollBar: false
 
