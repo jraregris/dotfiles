@@ -1,1 +1,20 @@
+# freshshell
 source ~/.fresh/build/shell.sh
+
+# antigen
+source ~/.antigen/antigen.zsh
+antigen-lib
+antigen-bundles <<EOBUNDLES
+bundler
+git
+heroku
+zsh-users/zsh-syntax-highlighting
+EOBUNDLES
+antigen-theme robbyrussell
+antigen-apply
+
+# exports
+export EDITOR=vim
+
+# aliases
+alias l='ls --almost-all -l --reverse -t'
