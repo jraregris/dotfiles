@@ -3,7 +3,7 @@ source ~/.fresh/build/shell.sh
 
 # antigen
 source ~/.antigen/antigen.zsh
-antigen-lib
+antigen use oh-my-zsh
 antigen-bundles <<EOBUNDLES
 bundler
 git
