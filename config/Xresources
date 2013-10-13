@@ -2,11 +2,6 @@
 
 URxvt.scrollBar: false
 
-URxvt.perl-ext-common:  default,url-select
-URxvt.keysym.M-b:       perl:url-select:select_next
-URxvt.url-select.launcher:  firefox
-URxvt.underlineURLs:    true
-
 *background: #202020
 *foreground: #dcdccc
 *cursorColor: Wheat
