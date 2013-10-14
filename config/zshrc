@@ -13,6 +13,9 @@ EOBUNDLES
 antigen-theme robbyrussell
 antigen-apply
 
+# paths
+export PATH=/home/oddmunds/.gem/ruby/2.0.0/bin:$PATH
+
 # exports
 export EDITOR=vim
 
