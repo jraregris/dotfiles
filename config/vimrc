@@ -1,0 +1,108 @@
+" vim
+set nocompatible
+
+" vundle
+filetype off
+
+set rtp+=/~.vim/bundle/vundle
+call vundle#rc()
+
+" vundle - bundles
+Bundle 'gmarik/vundle'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'Lokaltog/vim-distinguished'
+Bundle 'kien/ctrlp.vim'
+Bundle 'mattn/gist-vim'
+Bundle 'mattn/webapi-vim'
+Bundle 'tpope/vim-sleuth'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'tpope/vim-fugitive'
+Bundle 'elixir-lang/vim-elixir'
+
+filetype plugin indent on
+
+set t_Co=256
+colorscheme distinguished
+syntax on
+filetype indent plugin on
+
+set autoindent
+set backspace=indent,eol,start
+
+set backup
+set backupdir=~/.vim/backup
+
+set bg=dark
+set cc=+1
+
+set cpoptions=aABceFqs "might want to check out the actual options here
+
+set directory=~/.vim/tmp
+
+set expandtab
+
+set formatoptions+=ro
+
+set history=100
+
+set hlsearch
+set ignorecase
+set incsearch
+set infercase
+set history=100
+
+set hlsearch
+set ignorecase
+set incsearch
+set infercase
+
+set laststatus=2
+set lazyredraw
+set magic
+set matchpairs=(:),{:},[:],<:>
+set matchtime=2
+set number
+set report=0
+set ruler
+set scrolloff=5
+set shiftwidth=2
+set showbreak=
+set showcmd
+set showmatch
+set showmode
+set smartcase
+set smartindent
+set smarttab
+set softtabstop=2
+set splitright
+set startofline
+
+set relativenumber
+
+" experimental escape from escape
+imap jj <Esc>
+
+" Remove search highlighting with F3
+nnoremap <F3> :noh<cr>
+
+" Powerline
+let g:Powerline_symbols = 'fancy'
+
+" Ctrlp
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'rc' "r,c = nearest vc root, current dir
+let g:ctrlp_custom_ignore = '\v[\/](\.git|\.hg|\.svn)$'
+
+" gist-vim
+let g:gist_post_private = 1
+
+" Leader
+let mapleader=" "
+
+" Moving lines
+nnoremap <M-j> :m .+1<CR>==
+nnoremap <M-k> :m .-2<CR>==
+
+" Makefiles needs tabs
+autocmd FileType make set noexpandtab
