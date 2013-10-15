@@ -20,4 +20,5 @@ export PATH=/home/oddmunds/.gem/ruby/2.0.0/bin:$PATH
 export EDITOR=vim
 
 # aliases
+alias pry='bundle exec pry || pry' # use bundle exec if available
 alias l='ls --almost-all -l --reverse -t'
