@@ -1,5 +1,3 @@
-*font: xft:Terminus
-
 URxvt.scrollBar: false
 
 *background: #202020
