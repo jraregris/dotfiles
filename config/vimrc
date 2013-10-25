@@ -9,7 +9,7 @@ call vundle#rc()
 
 " vundle - bundles
 Bundle 'gmarik/vundle'
-Bundle 'Lokaltog/vim-powerline'
+"Bundle 'Lokaltog/vim-powerline'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mattn/gist-vim'
@@ -19,6 +19,8 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-fugitive'
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'derekwyatt/vim-scala'
+
+Bundle 'bling/vim-airline'
 
 filetype plugin indent on
 
