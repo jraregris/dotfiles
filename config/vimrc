@@ -25,7 +25,7 @@ Bundle 'bling/vim-airline'
 filetype plugin indent on
 
 set t_Co=256
-colorscheme wombat
+colorscheme distinguished
 syntax on
 filetype indent plugin on
 
