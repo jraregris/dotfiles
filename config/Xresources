@@ -1,3 +1,4 @@
+URxvt*font: xft:Inconsolata for Powerline
 URxvt.scrollBar: false
 
 *background: #202020
