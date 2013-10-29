@@ -16,6 +16,8 @@ antigen-apply
 # paths
 export PATH=/home/oddmunds/.gem/ruby/2.0.0/bin:$PATH
 export PATH=$PATH:/home/oddmunds/lib/play
+export PATH=$PATH:/usr/bin/site_perl/
+
 # exports
 export EDITOR=vim
 
