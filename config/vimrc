@@ -19,6 +19,8 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-fugitive'
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'derekwyatt/vim-scala'
+Bundle 'sjl/splice.vim'
+
 
 "Bundle 'bling/vim-airline'
 
