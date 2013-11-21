@@ -1,3 +1,13 @@
+! perls
+
+URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select
+URxvt.url-select.launcher:  firefox
+URxvt.url-select.underline: true
+URxvt.keysym.M-b:           perl:url-select:select_next
+URxvt.keysym.M-Escape:      perl:keyboard-select:activate
+Urxvt.keysym.M-s:           perl:keyboard-select:search
+
+
 URxvt*font: xft:Inconsolata for Powerline
 URxvt.scrollBar: false
 
