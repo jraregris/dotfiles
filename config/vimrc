@@ -21,6 +21,7 @@ Bundle 'elixir-lang/vim-elixir'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'sjl/splice.vim'
 
+Bundle 'unicode.vim'
 
 "Bundle 'bling/vim-airline'
 
