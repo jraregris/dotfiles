@@ -1,14 +1,21 @@
 ! perls
 
-URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select
+URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select,font-size
 URxvt.url-select.launcher:  firefox
 URxvt.url-select.underline: true
 URxvt.keysym.M-b:           perl:url-select:select_next
 URxvt.keysym.M-Escape:      perl:keyboard-select:activate
 Urxvt.keysym.M-s:           perl:keyboard-select:search
 
+! font-size
+URxvt.keysym.C-Up:      perl:font-size:increase
+URxvt.keysym.C-Down:    perl:font-size:decrease
+URxvt.keysym.C-S-Up:    perl:font-size:incglobal
+URxvt.keysym.C-S-Down:  perl:font-size:decglobal
 
-URxvt*font: xft:Inconsolata for Powerline
+URxvt.iso14755:     false
+URxvt.iso14755_52:  false
+
 URxvt.scrollBar: false
 
 *background: #202020
