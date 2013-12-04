@@ -18,7 +18,7 @@ URxvt.iso14755_52:  false
 
 URxvt.scrollBar: false
 
-URxvt*font: xft:Monaco for Powerline:size=11
+URxvt*font: xft:terminess powerline
 
 *background: #202020
 *foreground: #dcdccc
