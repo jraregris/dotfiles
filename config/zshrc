@@ -29,5 +29,7 @@ export EDITOR=vim
 export PACMAN=pacmatic
 
 # aliases
-alias pry='bundle exec pry || pry' # use bundle exec if available
 alias l='ls --almost-all -l --reverse -t'
+alias pry='bundle exec pry || pry' # use bundle exec if available
+alias v='vim'
+
