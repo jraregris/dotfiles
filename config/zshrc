@@ -31,5 +31,5 @@ export PACMAN=pacmatic
 # aliases
 alias l='ls --almost-all -l --reverse -t'
 alias pry='bundle exec pry || pry' # use bundle exec if available
+alias qtip='gradle clean ear'
 alias v='vim'
-
