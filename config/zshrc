@@ -27,6 +27,7 @@ export PATH=$PATH:/home/oddmunds/bin/
 export EDITOR=vim
 export PACMAN=pacmatic
 export V3_CONFIG_HOME=/etc/api
+export M2_HOME=/opt/maven
 
 # aliases
 alias l='ls --almost-all -l --reverse -t'
