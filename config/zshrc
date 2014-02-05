@@ -13,6 +13,9 @@ EOBUNDLES
 antigen-theme robbyrussell
 antigen-apply
 
+# ssh agent
+eval $(ssh-agent)
+
 # paths
 export PATH=/home/oddmunds/.gem/ruby/2.0.0/bin:$PATH
 export PATH=$PATH:/home/oddmunds/lib/play
