@@ -20,13 +20,23 @@ export PATH=$PATH:/usr/bin/site_perl/
 export PATH=$PATH:/usr/bin/vendor_perl/
 export PATH=$PATH:/home/oddmunds/bin/
 
+## amedia tools
+export PATH=$PATH:/home/oddmunds/bin/api-tools/ci
+export PATH=$PATH:/home/oddmunds/bin/api-tools/dev
+export PATH=$PATH:/home/oddmunds/bin/api-tools/metrics/load
+export PATH=$PATH:/home/oddmunds/bin/api-tools/metrics/yslow
+export PATH=$PATH:/home/oddmunds/bin/api-tools/smoketests
+
+
 # VNVNVNNVVM
 [ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh # This loads NVM
 
 # exports
 export EDITOR=vim
 export PACMAN=pacmatic
+
 export V3_CONFIG_HOME=/etc/api
+
 export M2_HOME=/opt/maven
 
 # aliases
