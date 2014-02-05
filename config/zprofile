@@ -1,3 +1,4 @@
 eval $(ssh-agent)
+eval $(ssh-add)
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
 
