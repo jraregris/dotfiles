@@ -14,7 +14,7 @@ antigen-theme robbyrussell
 antigen-apply
 
 # paths
-export PATH=/home/oddmunds/.gem/ruby/2.0.0/bin:$PATH
+export PATH=/home/oddmunds/.gem/ruby/2.1.0/bin:$PATH
 export PATH=$PATH:/home/oddmunds/lib/play
 export PATH=$PATH:/usr/bin/site_perl/
 export PATH=$PATH:/usr/bin/vendor_perl/
