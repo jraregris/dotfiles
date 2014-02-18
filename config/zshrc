@@ -26,6 +26,7 @@ export PATH=$PATH:/home/oddmunds/bin/api-tools/dev
 export PATH=$PATH:/home/oddmunds/bin/api-tools/metrics/load
 export PATH=$PATH:/home/oddmunds/bin/api-tools/metrics/yslow
 export PATH=$PATH:/home/oddmunds/bin/api-tools/smoketests
+export PATH=$PATH:/home/oddmunds/bin/api-tools/komparator
 
 
 # VNVNVNNVVM
