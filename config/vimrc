@@ -115,3 +115,6 @@ autocmd FileType make set noexpandtab
 
 " Markdown MD
 au BufRead,BufNewFile *.md set filetype=markdown
+
+" Show invisibles
+nmap <leader>l :set list!<CR>
