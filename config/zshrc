@@ -63,6 +63,7 @@ alias pry='bundle exec pry || pry' # use bundle exec if available
 alias qtip='gradle clean ear'
 alias v='vim'
 alias h='http -b --follow'
+alias gff='git pull --ff-only'
 
 # PROMPT HACK
 export PS1='%{$fg_bold[red]%}⮁ %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
