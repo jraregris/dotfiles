@@ -64,6 +64,19 @@ alias qtip='gradle clean ear'
 alias v='vim'
 alias h='http -b --follow'
 alias gff='git pull --ff-only'
+alias gp='git pull'
 
 # PROMPT HACK
 export PS1='%{$fg_bold[red]%}⮁ %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
+
+# fpath
+fpath=(~/.zsh/completion $fpath)
+
+autoload -U compinit
+compinit
+
+# dropwizardry
+alias dw='rm -f *-service/target/original* ; java -jar *-service/target/*-service-*-SNAPSHOT.jar server *-app/src/main/resources/etc/*.yml'
+
+# mæven
+alias mci='mvn -Dmaven.test.skip=true clean install'
