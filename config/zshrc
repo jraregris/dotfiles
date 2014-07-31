@@ -62,7 +62,8 @@ alias l='ls --almost-all -l --reverse -t'
 alias pry='bundle exec pry || pry' # use bundle exec if available
 alias qtip='gradle clean ear'
 alias v='vim'
-alias h='http -b --follow'
+alias h='http --body --follow'
+alias hh='http --headers'
 alias gff='git pull --ff-only'
 alias gp='git pull'
 
@@ -76,7 +77,7 @@ autoload -U compinit
 compinit
 
 # dropwizardry
-alias dw='rm -f *-service/target/original* ; java -jar *-service/target/*-service-*-SNAPSHOT.jar server *-app/src/main/resources/etc/*.yml'
+alias dorkw='rm -f *-service/target/original* ; java -jar *-service/target/*-service-*-SNAPSHOT.jar server *-app/src/main/resources/etc/*.yml'
 
 # mæven
 alias mci='mvn -Dmaven.test.skip=true clean install'
