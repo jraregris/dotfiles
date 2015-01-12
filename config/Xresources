@@ -18,7 +18,15 @@ URxvt.iso14755_52:  false
 
 URxvt.scrollBar: false
 
-URxvt*font: xft:terminess powerline,xft:monaco for powerline
+
+URxvt.font: xft:DejaVu Sans Mono:pixelsize=11
+URxvt.boldFont: xft:DejaVu Sans Mono:pixelsize=15:style=Bold
+
+!xft.dpi: 96
+Xft.antialias: true
+Xft.rgba: rgb
+Xft.hinting: true
+Xft.hintstyle: hintfull
 
 *background: #202020
 *foreground: #dcdccc

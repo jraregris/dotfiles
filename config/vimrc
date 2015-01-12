@@ -85,6 +85,24 @@ set startofline
 
 set relativenumber
 
+set cursorline
+set cursorcolumn
+
+" hightlight word
+nnoremap <C-K> :call HighlightNearCursor()<CR>
+
+function HighlightNearCursor()
+  if !exists("s:highlightcursor")
+    match Label /\k*\%#\k*/
+    let s:highlightcursor=1
+  else
+    match None
+    unlet s:highlightcursor
+  endif
+endfunction
+
+call HighlightNearCursor()
+
 " experimental escape from escape
 imap jj <Esc>
 
@@ -92,14 +110,17 @@ imap jj <Esc>
 nnoremap <F3> :noh<cr>
 
 " Powerline
-let g:Powerline_symbols = 'fancy'
+"let g:Powerline_symbols = 'fancy'
 
 " Ctrlp
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'rc' "r,c = nearest vc root, current dir
-let g:ctrlp_custom_ignore = '\v[\/](\.git|\.hg|\.svn)$'
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|dist|.sass_cache|.idea|.tmp|target)$'
+let g:ctrlp_use_caching = 1
+let g:ctrlp_clear_cache_on_exit = 1
 
+"
 " gist-vim
 let g:gist_post_private = 1
 
@@ -118,3 +139,6 @@ au BufRead,BufNewFile *.md set filetype=markdown
 
 " Show invisibles
 nmap <leader>l :set list!<CR>
+
+" stay, boy
+au BufEnter * execute "chdir ".escape(expand("%:p:h"), ' ')

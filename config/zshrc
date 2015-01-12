@@ -13,6 +13,10 @@ EOBUNDLES
 antigen-theme robbyrussell
 antigen-apply
 
+#history
+export SAVEHIST=1000
+
+
 # dirstack
 
 DIRSTACKFILE="$HOME/.cache/zsh/dirs"
@@ -31,7 +35,7 @@ setopt pushdignoredups
 setopt pushdminus
 
 # paths
-export PATH=/home/oddmunds/.gem/ruby/2.1.0/bin:$PATH
+export PATH=/home/oddmunds/.gem/ruby/2.2.0/bin:$PATH
 export PATH=$PATH:/home/oddmunds/lib/play
 export PATH=$PATH:/usr/bin/site_perl/
 export PATH=$PATH:/usr/bin/vendor_perl/
@@ -59,13 +63,14 @@ export M2_HOME=/opt/maven
 
 # aliases
 alias l='ls --almost-all -l --reverse -t'
-alias pry='bundle exec pry || pry' # use bundle exec if available
 alias qtip='gradle clean ear'
 alias v='vim'
 alias h='http --body --follow'
 alias hh='http --headers'
 alias gff='git pull --ff-only'
 alias gp='git pull'
+
+alias pryb="pry -e \"require 'bundler/setup'\""
 
 # PROMPT HACK
 export PS1='%{$fg_bold[red]%}⮁ %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
@@ -81,3 +86,6 @@ alias dorkw='rm -f *-service/target/original* ; java -jar *-service/target/*-ser
 
 # mæven
 alias mci='mvn -Dmaven.test.skip=true clean install'
+
+# java fonts
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=gasp'
