@@ -35,7 +35,6 @@ setopt pushdignoredups
 setopt pushdminus
 
 # paths
-export PATH=/home/oddmunds/.gem/ruby/2.2.0/bin:$PATH
 export PATH=$PATH:/home/oddmunds/lib/play
 export PATH=$PATH:/usr/bin/site_perl/
 export PATH=$PATH:/usr/bin/vendor_perl/
@@ -85,10 +84,6 @@ alias mci='mvn -Dmaven.test.skip=true clean install'
 
 # java fonts
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=gasp'
-
-# rvm
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # nvm
 source ~/.nvm/nvm.sh
