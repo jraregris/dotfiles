@@ -50,3 +50,5 @@ Xft.hintstyle: hintfull
 *color13: #cf9ebe
 *color14: #71bebe
 *color15: #ffffff
+
+URxvt*saveLines: 12000

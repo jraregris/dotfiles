@@ -49,10 +49,6 @@ export PATH=$PATH:/home/oddmunds/bin/api-tools/metrics/yslow
 export PATH=$PATH:/home/oddmunds/bin/api-tools/smoketests
 export PATH=$PATH:/home/oddmunds/bin/api-tools/komparator
 
-
-# VNVNVNNVVM
-[ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh # This loads NVM
-
 # exports
 export EDITOR=vim
 export PACMAN=pacmatic
@@ -89,3 +85,10 @@ alias mci='mvn -Dmaven.test.skip=true clean install'
 
 # java fonts
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=gasp'
+
+# rvm
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# nvm
+source ~/.nvm/nvm.sh
