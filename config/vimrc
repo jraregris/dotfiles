@@ -141,4 +141,4 @@ au BufRead,BufNewFile *.md set filetype=markdown
 nmap <leader>l :set list!<CR>
 
 " stay, boy
-au BufEnter * execute "chdir ".escape(expand("%:p:h"), ' ')
+" au BufEnter * execute "chdir ".escape(expand("%:p:h"), ' ')
