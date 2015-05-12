@@ -35,7 +35,6 @@ setopt pushdignoredups
 setopt pushdminus
 
 # paths
-export PATH=$PATH:/home/oddmunds/lib/play
 export PATH=$PATH:/usr/bin/site_perl/
 export PATH=$PATH:/usr/bin/vendor_perl/
 export PATH=$PATH:/home/oddmunds/bin/
@@ -91,3 +90,6 @@ source ~/.nvm/nvm.sh
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# tmux
+export DISABLE_AUTO_TITLE=true

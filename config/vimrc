@@ -4,31 +4,38 @@ set nocompatible
 " vundle
 filetype off
 
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " vundle - bundles
-Bundle 'gmarik/vundle'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'Lokaltog/vim-distinguished'
-Bundle 'kien/ctrlp.vim'
-Bundle 'mattn/gist-vim'
-Bundle 'mattn/webapi-vim'
-Bundle 'tpope/vim-sleuth'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'tpope/vim-fugitive'
-Bundle 'elixir-lang/vim-elixir'
-Bundle 'derekwyatt/vim-scala'
-Bundle 'sjl/splice.vim'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-sleuth'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'tpope/vim-fugitive'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'sjl/splice.vim'
 
-Bundle 'unicode.vim'
+Plugin 'unicode.vim'
 
-"Bundle 'bling/vim-airline'
+" gist
+Plugin 'mattn/webapi-vim'
+Plugin 'mattn/gist-vim'
+
+" snipmate
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+
+Plugin 'bling/vim-airline'
+
+call vundle#end()
 
 filetype plugin indent on
 
 set t_Co=256
-colorscheme distinguished
 syntax on
 filetype indent plugin on
 
