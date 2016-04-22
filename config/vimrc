@@ -149,3 +149,6 @@ nmap <leader>l :set list!<CR>
 
 " stay, boy
 " au BufEnter * execute "chdir ".escape(expand("%:p:h"), ' ')
+
+" Airline
+let g:airline_powerline_fonts = 1
