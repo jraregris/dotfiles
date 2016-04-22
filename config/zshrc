@@ -56,10 +56,12 @@ alias hh='http --headers'
 alias gff='git pull --ff-only'
 alias gp='git pull'
 
+alias doc='docker-compose'
+
 alias pryb="pry -e \"require 'bundler/setup'\""
 
 # PROMPT HACK
-export PS1='%{$fg_bold[red]%}⮁ %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
+export PS1='%{$fg_bold[red]%}★%{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
 
 # fpath
 fpath=(~/.zsh/completion $fpath)
