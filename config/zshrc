@@ -76,11 +76,10 @@ compinit
 # export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=gasp' # <- herbstluftwm specific
 
 # nvm
-source ~/.nvm/nvm.sh
+[[ -d ~/.nvm ]] && source ~/.nvm/nvm.sh
 
 # rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+[[ -d ~/.rvm ]] && export PATH="$HOME/.rbenv/bin:$PATH" && eval "$(rbenv init -)"
 
 # tmux
 export DISABLE_AUTO_TITLE=true
