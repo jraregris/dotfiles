@@ -73,7 +73,7 @@ autoload -U compinit
 compinit
 
 # java fonts
-export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=gasp'
+# export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=gasp' # <- herbstluftwm specific
 
 # nvm
 source ~/.nvm/nvm.sh
