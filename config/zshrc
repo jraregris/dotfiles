@@ -37,21 +37,11 @@ setopt pushdminus
 # paths
 export PATH=$PATH:/usr/bin/site_perl/
 export PATH=$PATH:/usr/bin/vendor_perl/
-export PATH=$PATH:/home/oddmunds/bin/
-
-## amedia tools
-export PATH=$PATH:/home/oddmunds/bin/api-tools/ci
-export PATH=$PATH:/home/oddmunds/bin/api-tools/dev
-export PATH=$PATH:/home/oddmunds/bin/api-tools/metrics/load
-export PATH=$PATH:/home/oddmunds/bin/api-tools/metrics/yslow
-export PATH=$PATH:/home/oddmunds/bin/api-tools/smoketests
-export PATH=$PATH:/home/oddmunds/bin/api-tools/komparator
+export PATH=$PATH:~/bin/
 
 # exports
 export EDITOR=vim
 export PACMAN=pacmatic
-
-export V3_CONFIG_HOME=/etc/api
 
 export M2_HOME=/opt/maven
 
@@ -74,12 +64,6 @@ fpath=(~/.zsh/completion $fpath)
 
 autoload -U compinit
 compinit
-
-# dropwizardry
-alias dorkw='rm -f *-service/target/original* ; java -jar *-service/target/*-service-*-SNAPSHOT.jar server *-app/src/main/resources/etc/*.yml'
-
-# mæven
-alias mci='mvn -Dmaven.test.skip=true clean install'
 
 # java fonts
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=gasp'
