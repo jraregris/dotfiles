@@ -1,3 +1,5 @@
+[ `hostname` = 'vagrant-ubuntu' ] && [[ -f /etc/shrc ]] && . /etc/shrc
+
 # freshshell
 source ~/.fresh/build/shell.sh
 
