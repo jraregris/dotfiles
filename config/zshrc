@@ -83,3 +83,22 @@ compinit
 
 # tmux
 export DISABLE_AUTO_TITLE=true
+
+# SIGURD SIN FEIL
+
+letty_debug() {
+    if [ -z $1 ]; then
+      echo "container id required"
+    else
+      docker exec -it $(docker ps | grep $1 | awk 'NR==1 {print $1}') bash -c "TERM=xterm less +F /var/log/*/application/debug/debuglog.log"
+    fi
+  }
+
+letty_tranlog() {
+  if [ -z $1 ]; then
+    echo "container id required"
+  else
+    docker exec -it $(docker ps | grep $1 | awk 'NR==1 {print $1}') bash -c "TERM=xterm less +F /var/log/*/application/transaction/si_translog"
+  fi
+}
+
