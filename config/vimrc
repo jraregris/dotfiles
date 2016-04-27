@@ -16,6 +16,11 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'sjl/splice.vim'
+Plugin 'xolox/vim-easytags'
+Plugin 'xolox/vim-misc'
+Plugin 'majutsushi/tagbar'
+Plugin 'tpope/vim-surround'
+Plugin 'lambdatoast/elm.vim'
 
 Plugin 'unicode.vim'
 
@@ -31,6 +36,9 @@ Plugin 'honza/vim-snippets'
 
 Plugin 'bling/vim-airline'
 
+" gruv
+Plugin 'morhetz/gruvbox'
+
 call vundle#end()
 
 filetype plugin indent on
@@ -38,6 +46,9 @@ filetype plugin indent on
 set t_Co=256
 syntax on
 filetype indent plugin on
+
+let g:gruvbox_italic=0
+colorscheme gruvbox
 
 set autoindent
 set backspace=indent,eol,start
@@ -95,6 +106,8 @@ set relativenumber
 set cursorline
 set cursorcolumn
 
+set textwidth=80
+
 " hightlight word
 nnoremap <C-K> :call HighlightNearCursor()<CR>
 
@@ -150,5 +163,4 @@ nmap <leader>l :set list!<CR>
 " stay, boy
 " au BufEnter * execute "chdir ".escape(expand("%:p:h"), ' ')
 
-" Airline
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0

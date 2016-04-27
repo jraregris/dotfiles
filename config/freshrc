@@ -4,3 +4,4 @@ fresh config/Xresources --file
 fresh config/zprofile --file
 fresh config/zshrc --file
 fresh config/vimrc --file
+fresh config/tmux.conf --file
