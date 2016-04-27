@@ -3,7 +3,6 @@ set nocompatible
 
 " vundle
 filetype off
-
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -37,7 +36,6 @@ Plugin 'honza/vim-snippets'
 Plugin 'bling/vim-airline'
 Plugin 'slim-template/vim-slim.git'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'unicode.vim'
 
 " gruv
 Plugin 'morhetz/gruvbox'
