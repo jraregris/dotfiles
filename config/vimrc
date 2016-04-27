@@ -35,11 +35,15 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 
 Plugin 'bling/vim-airline'
+Plugin 'slim-template/vim-slim.git'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'unicode.vim'
 
 " gruv
 Plugin 'morhetz/gruvbox'
 
 call vundle#end()
+
 
 filetype plugin indent on
 
@@ -140,7 +144,6 @@ let g:ctrlp_custom_ignore = '\v[\/](node_modules|dist|.sass_cache|.idea|.tmp|tar
 let g:ctrlp_use_caching = 1
 let g:ctrlp_clear_cache_on_exit = 1
 
-"
 " gist-vim
 let g:gist_post_private = 1
 
@@ -160,7 +163,4 @@ au BufRead,BufNewFile *.md set filetype=markdown
 " Show invisibles
 nmap <leader>l :set list!<CR>
 
-" stay, boy
-" au BufEnter * execute "chdir ".escape(expand("%:p:h"), ' ')
-
-let g:airline_powerline_fonts = 0
+let g:airline_powerline_fonts = 1
