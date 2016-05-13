@@ -6,4 +6,4 @@ fresh config/zprofile --file
 fresh config/zshrc --file
 fresh config/vimrc --file
 
-fresh config/termite --file=~/.config/termit/config
+fresh config/tmux.conf --file
