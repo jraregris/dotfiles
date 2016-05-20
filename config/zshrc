@@ -84,6 +84,9 @@ compinit
 # rbenv
 [[ -d ~/.rvm ]] && export PATH="$HOME/.rbenv/bin:$PATH" && eval "$(rbenv init -)"
 
+# walkmod
+[[ -d ~/src/walkmod-2.3.4 ]] && export WALKMOD_HOME="~/src/walkmod-2.3.4" &&
+  export PATH="$PATH:$WALKMOD_HOME/bin"
 
 # SIGURD SIN FEIL
 
