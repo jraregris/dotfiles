@@ -115,7 +115,7 @@ source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
 # grrrr
 export PACMAN=pacman
 
-export CDPATH=/git
+export CDPATH="$HOME/git"
 
 # rubygems
 if which ruby >/dev/null && which gem >/dev/null; then
