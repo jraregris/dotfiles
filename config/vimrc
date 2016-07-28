@@ -37,6 +37,8 @@ Plugin 'bling/vim-airline'
 Plugin 'slim-template/vim-slim.git'
 Plugin 'Valloric/YouCompleteMe'
 
+Plugin 'ledger/vim-ledger'
+
 " gruv
 Plugin 'morhetz/gruvbox'
 
