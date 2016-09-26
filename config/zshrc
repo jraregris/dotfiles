@@ -1,5 +1,3 @@
-[ `hostname` = 'vagrant-ubuntu' ] && [[ -f /etc/shrc ]] && . /etc/shrc
-
 # TODO:
 # http://stackoverflow.com/questions/11530090/adding-a-new-entry-to-the-path-variable-in-zsh
 
