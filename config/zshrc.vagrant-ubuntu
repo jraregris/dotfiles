@@ -1,1 +1,5 @@
+# -- V A G R A N T - U B U N T U --
 [ -f /etc/shrc ] && . /etc/shrc # shrc hook from provision
+CDPATH="$HOME/git"
+# --
+
