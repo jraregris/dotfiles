@@ -19,9 +19,7 @@ antigen-apply
 #history
 export SAVEHIST=1000
 
-
 # dirstack
-
 DIRSTACKFILE="$HOME/.cache/zsh/dirs"
 if [[ -f $DIRSTACKFILE ]] && [[ $#dirstack -eq 0 ]]; then
   dirstack=( ${(f)"$(< $DIRSTACKFILE)"} )
@@ -44,7 +42,7 @@ export PATH=$PATH:~/bin/
 
 export PATH=~/.npm-global/bin:$PATH
 export PATH=~/.gem/ruby/2.3.0/bin:$PATH
-#
+
 # exports
 export EDITOR=vim
 
