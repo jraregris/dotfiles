@@ -1,6 +1,7 @@
 # keep fresh fresh
 fresh freshshell/fresh bin/fresh --bin
 
+fresh .gitconfig --file
 fresh Xresources --file
 fresh zprofile --file
 fresh vimrc --file
