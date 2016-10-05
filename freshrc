@@ -1,0 +1,12 @@
+# keep fresh fresh
+fresh freshshell/fresh bin/fresh --bin
+
+fresh Xresources --file
+fresh zprofile --file
+fresh vimrc --file
+fresh tmux.conf --file
+
+fresh-options --file=~/.zshrc
+  fresh zshrc.$(hostname -s) --ignore-missing
+  fresh zshrc
+fresh-options
